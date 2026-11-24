@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: lightblue;
+    margin: 0;
+}
+
+header, footer {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #333;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+section, aside {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article {
+    padding: 8px;
+}
+
+form {
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select, textarea {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background: navy;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid orange;
+}
+body
+{
+    background-color: aqua;
+    margin:0;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+form
+{
+    background-color: rgb(15, 171, 214);
+    width: 500px;
+    margin: 30px auto;
+    padding: 40px;
+    border : 2px solid black;
+    border-radius: 10px;
+}

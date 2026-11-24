@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+<section>
+    <h1>Patient Appointment Form</h1>
+
+    <form>
+        <label for="name">Patient Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone"
+               pattern="[0-9]{10}" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age"
+               min="1" max="120" required>
+
+        <label for="department">Department:</label>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+        </select>
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" required>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </fieldset>
+
+        <label for="message">Additional Information:</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the terms.
+        </label>
+
+        <button type="submit">Book Appointment</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+</main>
+
+</body>
+</html>
